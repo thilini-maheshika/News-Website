@@ -1,0 +1,51 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0.4em;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background: #f8f7f7;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.menu .inactive {
+    background: #8f8c8c;
+}
+
+.menu .active {
+    background: #222222;
+}
+
+.menu .active:hover {
+    background-color: #d4cfcf;
+}
+
+.menu .inactive:hover {
+    background: #d4cfcf;
+}
+
+@media screen and (max-width:360px) {
+
+    .menu {
+        display: inline-block;
+        margin-left: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width:280px) {
+
+    .menu {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+}

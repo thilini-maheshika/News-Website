@@ -3,3 +3,16 @@
     margin: 1.3em 0;
     font-size: 2.5em;
 }
+
+.loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+@media screen and (max-width:420px) {
+    .home-title {
+        font-size: 1.7em;
+    }
+}

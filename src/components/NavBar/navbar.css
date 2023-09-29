@@ -20,45 +20,25 @@
   margin-top: 0.4rem;
 }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 5px;
-  margin-top: 1rem;
-}
-
-.menu-toggle .bar {
-  background-color: rgb(231, 10, 10);
-  height: 4px;
-  width: 30px;
-  margin: 3px 0;
-  transition: 0.4s;
-}
-
-.desktopMenu {
-  padding: 2.5rem;
-}
-
-.desktopMenuListItem {
-  margin: 2rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.desktopMenuListItem:hover {
-  color: rgb(231, 10, 10);
-  padding-bottom: 0.5rem;
-  border-bottom: 8px solid rgb(231, 10, 10);
-}
-
 #current-date {
   
   padding: 0 1rem;
   margin: 1rem;
   font-weight: 600;
   color: rgb(149, 155, 155);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.link {
+  object-fit: cover;
+  height: 2rem;
+  width: 3rem;
+  margin: 0 0.75rem;
 }
 
 @media screen and (max-width:920px) {
@@ -72,12 +52,9 @@
     margin: 0.8rem;
   }
 
-   .desktopMenu {
-    padding: 0;
-  }
-
   #current-date {
     font-size: 0.8rem;
+    margin-right: 1rem;
   }
   
 }
@@ -88,41 +65,18 @@
     height: 1rem;
   }
 
-  .menu-toggle {
-    display: flex; 
-    margin: 1.2rem;
-  }
-
-  .menu-toggle .bar {
-    height: 4px;
-    width: 25px;
-  }
-
   .logo {
     height: 3.3rem;
     width: 3.2rem;
     margin: 0.4rem;
   }
 
-  .desktopMenu {
+  .links  {
     display: none;
-    position: absolute;
   }
 
-  .desktopMenu.open {
-    display: flex;
-    flex-direction: column;
-    top: 4.5rem;
-    right: 2rem;
-    background: rgb(103 117 115);
-    min-width: 12rem;
-    border-radius: 1rem;
-  }
-
-  .desktopMenuListItem {
-    margin: 1rem 0;
-    text-align: center;
-    font-size: 0.8rem;
+  #current-date {
+    font-size: 1.2rem;
   }
 
 }
@@ -134,14 +88,6 @@
     width: 100%;
 
   }
-  .menu-toggle {
-    display: flex; 
-  }
-
-  .menu-toggle .bar {
-    height: 3px;
-    width: 24px;
-  }
 
   .logo {
     height: 3.3rem;
@@ -153,25 +99,8 @@
     font-size: 0.9rem;
   }
 
-  .desktopMenu {
+  .links  {
     display: none;
-    position: absolute;
-  }
-
-  .desktopMenu.open {
-    display: flex;
-    flex-direction: column;
-    top: 4.5rem;
-    right: 2rem;
-    background: rgb(103 117 115);
-    min-width: 10rem;
-    border-radius: 1rem;
-  }
-
-  .desktopMenuListItem {
-    margin: 1rem 0;
-    text-align: center;
-    font-size: 0.9rem;
   }
 }
 
@@ -182,45 +111,20 @@
     width: 100%;
   }
 
-  .menu-toggle {
-    display: flex; 
-  }
-
-  .menu-toggle .bar {
-    height: 3px;
-    width: 20px;
-  }
-
   .logo {
     height: 3.3rem;
     width: 3.3rem;
-    margin: -0.1rem;
+    margin: 1rem;
   }
 
   #current-date {
     font-size: 0.9rem;
   }
 
-  .desktopMenu {
+  .links  {
     display: none;
-    position: absolute;
   }
 
-  .desktopMenu.open {
-    display: flex;
-    flex-direction: column;
-    top: 4.5rem;
-    right: 1.5rem;
-    background: rgb(103 117 115);
-    min-width: 10rem;
-    border-radius: 1rem;
-  }
-
-  .desktopMenuListItem {
-    margin: 0.7rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (max-width:280px) {
@@ -228,16 +132,6 @@
   .navbar {
     height: 0.5rem;
     width: 100%;
-  }
-
-  .menu-toggle {
-    display: flex; 
-    margin: 0.5rem;
-  }
-
-  .menu-toggle .bar {
-    height: 3px;
-    width: 20px;
   }
 
   .logo {
@@ -250,24 +144,8 @@
     font-size: 0.8rem;
   }
 
-  .desktopMenu {
+  .links  {
     display: none;
-    position: absolute;
   }
 
-  .desktopMenu.open {
-    display: flex;
-    flex-direction: column;
-    top: 4rem;
-    right: 1.5rem;
-    background: rgb(103 117 115);
-    min-width: 9rem;
-    border-radius: 1rem;
-  }
-
-  .desktopMenuListItem {
-    margin: 0.8rem 0;
-    text-align: center;
-    font-size: 0.8rem;
-  }
 }

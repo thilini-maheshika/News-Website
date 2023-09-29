@@ -1,6 +1,7 @@
 import React, { useState , useEffect } from 'react'
 import NewsGrid from '../NewsGrid/news-grid'
 import './main.css'
+import Menu from '../Menu/menu'
 
 function Home() {
 
@@ -9,7 +10,7 @@ function Home() {
     const [category, setCategory] = useState("general");
 
     useEffect(() => {
-        fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=285752f237044577bc3b418fa378fc69`)
+        fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=e78f12e23257429c85eb311688c974a0`)
         .then(res => res.json())
         .then(data => setItems(data.articles))
     }, [category]
@@ -19,6 +20,7 @@ function Home() {
   return (
     <div className='home'>
         <h2 className='home-title'>Latest News</h2>
+        <Menu active={active} setActive={setActive} setCategory={setCategory} />
         <NewsGrid items={items}/>
     </div>
   )
